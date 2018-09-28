@@ -1,0 +1,219 @@
+body {
+
+    margin: 0px;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+header {
+    background-color: #76D528;
+    padding: 16px;
+
+}
+
+header img {
+
+    width: 30vw;
+
+}
+
+header p {
+
+    margin-top: 0px;
+    color: white;
+
+}
+
+.extraheader {
+
+    height: 20px;
+    background-color: #444444;
+    color: white;
+    margin-bottom: 20px;
+    padding: 10px;
+
+}
+
+.extraheader p {
+
+    margin: 0px;
+
+}
+
+.sorteer {
+
+    overflow-x: scroll;
+    /*    het scrollt verticaal maar het moet horizontaal zijn.*/
+    height: 240px;
+
+}
+
+h2 {
+
+    text-align: left;
+    margin: 10px;
+    margin-left: 40px;
+    color: #444444;
+
+}
+
+.verhaal {
+
+    height: 30vh;
+    width: 40%;
+    display: inline-block;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid lightgray
+}
+
+.thumbnail {
+
+    height: 40%;
+    background-color: beige;
+
+}
+
+.meta {
+
+    height: 60%;
+    border-top: 1px solid lightgray;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.meta h3 {
+
+    text-align: left;
+    margin: 7px;
+    display: block;
+    font-weight: 900;
+
+}
+
+.meta p {
+
+    text-align: left;
+    margin: 7px;
+    display: block;
+    font-weight: 100;
+
+}
+
+.metabottom {
+
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+
+}
+
+.meta img {
+
+    width: 50px;
+    /* Tijdelijk tot ik leer hoe het zonder float moet.    */
+    bottom: 0px;
+    float: left;
+
+}
+
+.metabottom p {
+
+    float: right;
+    margin-top: 24px;
+
+}
+
+.meta .like {
+
+    width: 30px;
+    float: right;
+    margin-right: 1vw;
+    margin-top: 18px;
+
+}
+
+
+.categorieenknop {
+
+    background-color: #FDAC2A;
+    padding: 15px;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 5px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1em;
+    color: white;
+    border: none;
+
+}
+
+.categorieenknop:hover {
+
+    background-color: #FD9727;
+
+}
+
+.sorteer {
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.sorteer a {
+
+    font-size: 1.2em;
+    margin: 2vw;
+
+}
+
+
+input {
+
+    display: block;
+    margin: 0 auto;
+    font-size: 1em;
+
+}
+
+label {
+
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-size: 1.2em;
+    width: 200px;
+
+}
+
+label p {
+
+    float: left;
+    margin: 0px;
+
+}
+
+.loginb p,
+.loginb a {
+
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 40px;
+
+}
+
+footer {
+
+    background-image: url(Images/flixmobility-mobile-2x.png);
+
+    background-size: 100%;
+    background-position: center;
+    height: 30vw;
+    background-repeat: no-repeat;
+
+
+}
