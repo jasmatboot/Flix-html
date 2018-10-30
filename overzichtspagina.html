@@ -3,17 +3,21 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Overzicht - Flixbusverhalen</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 
-<body>
+<body class="overzicht">
 
     <header>
 
-        <img src="Images/flixbus_logo.svg" alt="">
+        <img src="Images/flixbusverhalen_logo.svg" alt="">
+
+        <a href="register.html">Login</a>
     </header>
 
     <header>
@@ -27,22 +31,117 @@
             Categorieen
         </button>
 
-        <h2>Nieuwste</h2>
+        <nav>
+
+            <form action="#">
+                <div>
+                    <h2>Categorieen</h2>
+
+
+                    <label>
+                <input type="checkbox" name="spanning" value="Spanning"> 
+                Spanning
+                </label>
+                    <label>
+                <input type="checkbox" name="drama" value="Drama"> Drama
+                </label>
+                    <label>
+                <input type="checkbox" name="poeziealt" value="Poezie/alternatief"> Poëzie/Alternatief
+                </label>
+
+                    <label>
+                <input type="checkbox" name="satire" value="Satire"> Satire
+                </label>
+
+                    <label>
+                <input type="checkbox" name="psychologisch" value="Psychologisch"> Psychologisch
+                </label>
+
+                    <div>
+                        <label>
+                <input type="checkbox" name="leestijd" value="Leestijd"> Leestijd(Maximaal)
+                
+                </label>
+
+                        <input type="range" disabled name="leestijd" min="0" max="100" value="50" step="2" />
+                    </div>
+
+                </div>
+                <div>
+
+                    <button>
+            OK
+            </button>
+
+
+                    <button>Mijn Lijst</button>
+
+
+                </div>
+            </form>
+        </nav>
+
+
         <section>
 
+            <h2>Nieuwste</h2>
+
+
             <section>
 
-                <header></header>
+                <a href="verhaal1.html">
+                    <!-- Verhaal   -->
+                    <header style="background-image:url(Images/thumbnails/verhaal10.jpg)"></header>
+
+
+
+                    <article>
+                        <h3>Presentator die ten onrechte denkt aansluiting te hebben gevonden bij ‘de kids’</h3>
+
+                    </article>
+
+                </a>
+                <footer>
+
+                    <div>
+                        <img src="Images/downloadbutton.svg" alt="">
+
+
+                        <p>Opslaan in lijst</p>
+
+                    </div>
+
+
+                    <div>
+
+                        <p>3276 </p>
+                        <img src="Images/like.svg" alt="">
+                    </div>
+
+                </footer>
+            </section>
+
+
+
+            <section>
+                <!-- Verhaal   -->
+                <header style="background-image:url(Images/thumbnails/3.%20Droom.png)"></header>
                 <article>
-                    <h3>Titel</h3>
+                    <h3>Droom</h3>
 
                 </article>
                 <footer>
 
-                    <img src="Images/downloadbutton.svg" alt="">
+                    <div>
+                        <img src="Images/downloadbutton.svg" alt="">
+
+
+                        <p>Opslaan in lijst</p>
+
+                    </div>
+
 
                     <div>
-                        <!- div is hier nodig ->
 
                         <p>3276 </p>
                         <img src="Images/like.svg" alt="">
@@ -52,18 +151,24 @@
             </section>
 
             <section>
-
-                <header></header>
+                <!-- Verhaal   -->
+                <header style="background-image:url(Images/thumbnails/Regenboog.jpg)"></header>
                 <article>
-                    <h3>Titel</h3>
+                    <h3>Regenboog</h3>
 
                 </article>
                 <footer>
 
-                    <img src="Images/downloadbutton.svg" alt="">
+                    <div>
+                        <img src="Images/downloadbutton.svg" alt="">
+
+
+                        <p>Opslaan in lijst</p>
+
+                    </div>
+
 
                     <div>
-                        <!- div is hier nodig ->
 
                         <p>3276 </p>
                         <img src="Images/like.svg" alt="">
@@ -73,18 +178,1070 @@
             </section>
 
             <section>
-
-                <header></header>
+                <!-- Verhaal   -->
+                <header style="background-image:url(Images/thumbnails/19.png)"></header>
                 <article>
-                    <h3>Titel</h3>
+                    <h3>Gemeenteblik</h3>
 
                 </article>
                 <footer>
 
-                    <img src="Images/downloadbutton.svg" alt="">
+                    <div>
+                        <img src="Images/downloadbutton.svg" alt="">
+
+
+                        <p>Opslaan in lijst</p>
+
+                    </div>
+
 
                     <div>
-                        <!- div is hier nodig ->
+
+                        <p>3276 </p>
+                        <img src="Images/like.svg" alt="">
+                    </div>
+
+                </footer>
+            </section>
+
+            <section>
+                <!-- Verhaal   -->
+                <header style="background-image:url(Images/thumbnails/37%20-%20Letterlijk.png)"></header>
+                <article>
+                    <h3>Letterlijk</h3>
+
+                </article>
+                <footer>
+
+                    <div>
+                        <img src="Images/downloadbutton.svg" alt="">
+
+
+                        <p>Opslaan in lijst</p>
+
+                    </div>
+
+
+                    <div>
+
+                        <p>3276 </p>
+                        <img src="Images/like.svg" alt="">
+                    </div>
+
+                </footer>
+            </section>
+
+            <section>
+                <!-- Verhaal   -->
+                <header style="background-image:url(Images/thumbnails/Leon%20de%20winter.png)"></header>
+                <article>
+                    <h3>Leon de Winter</h3>
+
+                </article>
+                <footer>
+
+                    <div>
+                        <img src="Images/downloadbutton.svg" alt="">
+
+
+                        <p>Opslaan in lijst</p>
+
+                    </div>
+
+
+                    <div>
+
+                        <p>3276 </p>
+                        <img src="Images/like.svg" alt="">
+                    </div>
+
+                </footer>
+            </section>
+
+            <section>
+                <!-- Verhaal   -->
+                <header style="background-image:url(Images/thumbnails/65.%20Recept.jpg)"></header>
+                <article>
+                    <h3>Recept</h3>
+
+                </article>
+                <footer>
+
+                    <div>
+                        <img src="Images/downloadbutton.svg" alt="">
+
+
+                        <p>Opslaan in lijst</p>
+
+                    </div>
+
+
+                    <div>
+
+                        <p>3276 </p>
+                        <img src="Images/like.svg" alt="">
+                    </div>
+
+                </footer>
+            </section>
+
+            <section>
+                <!-- Verhaal   -->
+                <header style="background-image:url(Images/thumbnails/alzheimer.jpg)"></header>
+                <article>
+                    <h3>Alzheimer</h3>
+
+                </article>
+                <footer>
+
+                    <div>
+                        <img src="Images/downloadbutton.svg" alt="">
+
+
+                        <p>Opslaan in lijst</p>
+
+                    </div>
+
+
+                    <div>
+
+                        <p>3276 </p>
+                        <img src="Images/like.svg" alt="">
+                    </div>
+
+                </footer>
+            </section>
+
+            <section>
+                <!-- Verhaal   -->
+                <header style="background-image:url(Images/thumbnails/boers.png)"></header>
+                <article>
+                    <h3>Boers</h3>
+
+                </article>
+                <footer>
+
+                    <div>
+                        <img src="Images/downloadbutton.svg" alt="">
+
+
+                        <p>Opslaan in lijst</p>
+
+                    </div>
+
+
+                    <div>
+
+                        <p>3276 </p>
+                        <img src="Images/like.svg" alt="">
+                    </div>
+
+                </footer>
+            </section>
+
+            <section>
+                <!-- Verhaal   -->
+                <header style="background-image:url(Images/thumbnails/eric-lucassen-16-01.png)"></header>
+                <article>
+                    <h3>Eric Lucassen</h3>
+
+                </article>
+                <footer>
+
+                    <div>
+                        <img src="Images/downloadbutton.svg" alt="">
+
+
+                        <p>Opslaan in lijst</p>
+
+                    </div>
+
+
+                    <div>
+
+                        <p>3276 </p>
+                        <img src="Images/like.svg" alt="">
+                    </div>
+
+                </footer>
+            </section>
+
+            <section>
+                <!-- Verhaal   -->
+                <header style="background-image:url(Images/thumbnails/Essentie.jpg)"></header>
+                <article>
+                    <h3>Essentie</h3>
+
+                </article>
+                <footer>
+
+                    <div>
+                        <img src="Images/downloadbutton.svg" alt="">
+
+
+                        <p>Opslaan in lijst</p>
+
+                    </div>
+
+
+                    <div>
+
+                        <p>3276 </p>
+                        <img src="Images/like.svg" alt="">
+                    </div>
+
+                </footer>
+            </section>
+
+            <section>
+                <!-- Verhaal   -->
+                <header style="background-image:url(Images/thumbnails/Hero%C3%AFsch%20vers-15.png)"></header>
+                <article>
+                    <h3>Heroïsch vers</h3>
+
+                </article>
+                <footer>
+
+                    <div>
+                        <img src="Images/downloadbutton.svg" alt="">
+
+
+                        <p>Opslaan in lijst</p>
+
+                    </div>
+
+
+                    <div>
+
+                        <p>3276 </p>
+                        <img src="Images/like.svg" alt="">
+                    </div>
+
+                </footer>
+            </section>
+
+            <section>
+                <!-- Verhaal   -->
+                <header style="background-image:url(Images/thumbnails/iPhone.png)"></header>
+                <article>
+                    <h3>iPhone</h3>
+
+                </article>
+                <footer>
+
+                    <div>
+                        <img src="Images/downloadbutton.svg" alt="">
+
+
+                        <p>Opslaan in lijst</p>
+
+                    </div>
+
+
+                    <div>
+
+                        <p>3276 </p>
+                        <img src="Images/like.svg" alt="">
+                    </div>
+
+                </footer>
+            </section>
+
+            <section>
+                <!-- Verhaal   -->
+                <header style="background-image:url(Images/thumbnails/johan.png)"></header>
+                <article>
+                    <h3>Johan Cruiff</h3>
+
+                </article>
+                <footer>
+
+                    <div>
+                        <img src="Images/downloadbutton.svg" alt="">
+
+
+                        <p>Opslaan in lijst</p>
+
+                    </div>
+
+
+                    <div>
+
+                        <p>3276 </p>
+                        <img src="Images/like.svg" alt="">
+                    </div>
+
+                </footer>
+            </section>
+
+
+
+
+
+        </section>
+
+
+        <section>
+
+            <h2>Meest geliked</h2>
+
+            <section>
+                <!-- Verhaal   -->
+                <header style="background-image:url(Images/thumbnails/poep.jpg)"></header>
+                <article>
+                    <h3>Poep</h3>
+
+                </article>
+                <footer>
+
+                    <div>
+                        <img src="Images/downloadbutton.svg" alt="">
+
+
+                        <p>Opslaan in lijst</p>
+
+                    </div>
+
+
+                    <div>
+
+                        <p>3276 </p>
+                        <img src="Images/like.svg" alt="">
+                    </div>
+
+                </footer>
+            </section>
+
+            <section>
+                <!-- Verhaal   -->
+                <header style="background-image:url(Images/thumbnails/Sonnet.jpg)"></header>
+                <article>
+                    <h3>Sonnet</h3>
+
+                </article>
+                <footer>
+
+                    <div>
+                        <img src="Images/downloadbutton.svg" alt="">
+
+
+                        <p>Opslaan in lijst</p>
+
+                    </div>
+
+
+                    <div>
+
+                        <p>3276 </p>
+                        <img src="Images/like.svg" alt="">
+                    </div>
+
+                </footer>
+            </section>
+
+            <section>
+                <!-- Verhaal   -->
+                <header style="background-image:url(Images/thumbnails/stijlpagina-moe.jpg)"></header>
+                <article>
+                    <h3>Moe</h3>
+
+                </article>
+                <footer>
+
+                    <div>
+                        <img src="Images/downloadbutton.svg" alt="">
+
+
+                        <p>Opslaan in lijst</p>
+
+                    </div>
+
+
+                    <div>
+
+                        <p>3276 </p>
+                        <img src="Images/like.svg" alt="">
+                    </div>
+
+                </footer>
+            </section>
+
+            <section>
+                <!-- Verhaal   -->
+                <header style="background-image:url(Images/thumbnails/alzheimer.jpg)"></header>
+                <article>
+                    <h3>Alzheimer</h3>
+
+                </article>
+                <footer>
+
+                    <div>
+                        <img src="Images/downloadbutton.svg" alt="">
+
+
+                        <p>Opslaan in lijst</p>
+
+                    </div>
+
+
+                    <div>
+
+                        <p>3276 </p>
+                        <img src="Images/like.svg" alt="">
+                    </div>
+
+                </footer>
+            </section>
+
+            <section>
+                <!-- Verhaal   -->
+                <header style="background-image:url(Images/thumbnails/boers.png)"></header>
+                <article>
+                    <h3>Boers</h3>
+
+                </article>
+                <footer>
+
+                    <div>
+                        <img src="Images/downloadbutton.svg" alt="">
+
+
+                        <p>Opslaan in lijst</p>
+
+                    </div>
+
+
+                    <div>
+
+                        <p>3276 </p>
+                        <img src="Images/like.svg" alt="">
+                    </div>
+
+                </footer>
+            </section>
+
+            <section>
+                <!-- Verhaal   -->
+                <header style="background-image:url(Images/thumbnails/eric-lucassen-16-01.png)"></header>
+                <article>
+                    <h3>Eric Lucassen</h3>
+
+                </article>
+                <footer>
+
+                    <div>
+                        <img src="Images/downloadbutton.svg" alt="">
+
+
+                        <p>Opslaan in lijst</p>
+
+                    </div>
+
+
+                    <div>
+
+                        <p>3276 </p>
+                        <img src="Images/like.svg" alt="">
+                    </div>
+
+                </footer>
+            </section>
+
+            <section>
+                <!-- Verhaal   -->
+                <header style="background-image:url(Images/thumbnails/Essentie.jpg)"></header>
+                <article>
+                    <h3>Essentie</h3>
+
+                </article>
+                <footer>
+
+                    <div>
+                        <img src="Images/downloadbutton.svg" alt="">
+
+
+                        <p>Opslaan in lijst</p>
+
+                    </div>
+
+
+                    <div>
+
+                        <p>3276 </p>
+                        <img src="Images/like.svg" alt="">
+                    </div>
+
+                </footer>
+            </section>
+
+            <section>
+                <!-- Verhaal   -->
+                <header style="background-image:url(Images/thumbnails/Hero%C3%AFsch%20vers-15.png)"></header>
+                <article>
+                    <h3>Heroïsch vers</h3>
+
+                </article>
+                <footer>
+
+                    <div>
+                        <img src="Images/downloadbutton.svg" alt="">
+
+
+                        <p>Opslaan in lijst</p>
+
+                    </div>
+
+
+                    <div>
+
+                        <p>3276 </p>
+                        <img src="Images/like.svg" alt="">
+                    </div>
+
+                </footer>
+            </section>
+
+            <section>
+                <!-- Verhaal   -->
+                <header style="background-image:url(Images/thumbnails/Essentie.jpg)"></header>
+                <article>
+                    <h3>Essentie</h3>
+
+                </article>
+                <footer>
+
+                    <div>
+                        <img src="Images/downloadbutton.svg" alt="">
+
+
+                        <p>Opslaan in lijst</p>
+
+                    </div>
+
+
+                    <div>
+
+                        <p>3276 </p>
+                        <img src="Images/like.svg" alt="">
+                    </div>
+
+                </footer>
+            </section>
+
+            <section>
+                <!-- Verhaal   -->
+                <header style="background-image:url(Images/thumbnails/Hero%C3%AFsch%20vers-15.png)"></header>
+                <article>
+                    <h3>Heroïsch vers</h3>
+
+                </article>
+                <footer>
+
+                    <div>
+                        <img src="Images/downloadbutton.svg" alt="">
+
+
+                        <p>Opslaan in lijst</p>
+
+                    </div>
+
+
+                    <div>
+
+                        <p>3276 </p>
+                        <img src="Images/like.svg" alt="">
+                    </div>
+
+                </footer>
+            </section>
+
+            <section>
+                <!-- Verhaal   -->
+                <header style="background-image:url(Images/thumbnails/iPhone.png)"></header>
+                <article>
+                    <h3>iPhone</h3>
+
+                </article>
+                <footer>
+
+                    <div>
+                        <img src="Images/downloadbutton.svg" alt="">
+
+
+                        <p>Opslaan in lijst</p>
+
+                    </div>
+
+
+                    <div>
+
+                        <p>3276 </p>
+                        <img src="Images/like.svg" alt="">
+                    </div>
+
+                </footer>
+            </section>
+
+            <section>
+                <!-- Verhaal   -->
+                <header style="background-image:url(Images/thumbnails/johan.png)"></header>
+                <article>
+                    <h3>Johan Cruiff</h3>
+
+                </article>
+                <footer>
+
+                    <div>
+                        <img src="Images/downloadbutton.svg" alt="">
+
+
+                        <p>Opslaan in lijst</p>
+
+                    </div>
+
+
+                    <div>
+
+                        <p>3276 </p>
+                        <img src="Images/like.svg" alt="">
+                    </div>
+
+                </footer>
+            </section>
+
+            <section>
+                <!-- Verhaal   -->
+                <header style="background-image:url(Images/thumbnails/3.%20Droom.png)"></header>
+                <article>
+                    <h3>Droom</h3>
+
+                </article>
+                <footer>
+
+                    <div>
+                        <img src="Images/downloadbutton.svg" alt="">
+
+
+                        <p>Opslaan in lijst</p>
+
+                    </div>
+
+
+                    <div>
+
+                        <p>3276 </p>
+                        <img src="Images/like.svg" alt="">
+                    </div>
+
+                </footer>
+            </section>
+
+            <section>
+                <!-- Verhaal   -->
+                <header style="background-image:url(Images/thumbnails/Regenboog.jpg)"></header>
+                <article>
+                    <h3>Regenboog</h3>
+
+                </article>
+                <footer>
+
+                    <div>
+                        <img src="Images/downloadbutton.svg" alt="">
+
+
+                        <p>Opslaan in lijst</p>
+
+                    </div>
+
+
+                    <div>
+
+                        <p>3276 </p>
+                        <img src="Images/like.svg" alt="">
+                    </div>
+
+                </footer>
+            </section>
+
+
+        </section>
+
+
+        <section>
+
+            <h2>Vaakst gelezen</h2>
+
+            <section>
+                <!-- Verhaal   -->
+                <header style="background-image:url(Images/thumbnails/stoned.png)"></header>
+                <article>
+                    <h3>Stoned</h3>
+
+                </article>
+                <footer>
+
+                    <div>
+                        <img src="Images/downloadbutton.svg" alt="">
+
+
+                        <p>Opslaan in lijst</p>
+
+                    </div>
+
+
+                    <div>
+
+                        <p>3276 </p>
+                        <img src="Images/like.svg" alt="">
+                    </div>
+
+                </footer>
+            </section>
+
+            <section>
+                <!-- Verhaal   -->
+                <header style="background-image:url(Images/thumbnails/hardboiled.jpg)"></header>
+                <article>
+                    <h3>Hardboiled</h3>
+
+                </article>
+                <footer>
+
+                    <div>
+                        <img src="Images/downloadbutton.svg" alt="">
+
+
+                        <p>Opslaan in lijst</p>
+
+                    </div>
+
+
+                    <div>
+
+                        <p>3276 </p>
+                        <img src="Images/like.svg" alt="">
+                    </div>
+
+                </footer>
+            </section>
+
+            <section>
+                <!-- Verhaal   -->
+                <header style="background-image:url(Images/thumbnails/1%20-%20Notitie.jpg)"></header>
+                <article>
+                    <h3>Notitie</h3>
+
+                </article>
+                <footer>
+
+                    <div>
+                        <img src="Images/downloadbutton.svg" alt="">
+
+
+                        <p>Opslaan in lijst</p>
+
+                    </div>
+
+
+                    <div>
+
+                        <p>3276 </p>
+                        <img src="Images/like.svg" alt="">
+                    </div>
+
+                </footer>
+            </section>
+
+            <section>
+                <!-- Verhaal   -->
+                <header style="background-image:url(Images/thumbnails/19.png)"></header>
+                <article>
+                    <h3>Gemeenteblik</h3>
+
+                </article>
+                <footer>
+
+                    <div>
+                        <img src="Images/downloadbutton.svg" alt="">
+
+
+                        <p>Opslaan in lijst</p>
+
+                    </div>
+
+
+                    <div>
+
+                        <p>3276 </p>
+                        <img src="Images/like.svg" alt="">
+                    </div>
+
+                </footer>
+            </section>
+
+            <section>
+                <!-- Verhaal   -->
+                <header style="background-image:url(Images/thumbnails/37%20-%20Letterlijk.png)"></header>
+                <article>
+                    <h3>Letterlijk</h3>
+
+                </article>
+                <footer>
+
+                    <div>
+                        <img src="Images/downloadbutton.svg" alt="">
+
+
+                        <p>Opslaan in lijst</p>
+
+                    </div>
+
+
+                    <div>
+
+                        <p>3276 </p>
+                        <img src="Images/like.svg" alt="">
+                    </div>
+
+                </footer>
+            </section>
+
+            <section>
+                <!-- Verhaal   -->
+                <header style="background-image:url(Images/thumbnails/Leon%20de%20winter.png)"></header>
+                <article>
+                    <h3>Leon de Winter</h3>
+
+                </article>
+                <footer>
+
+                    <div>
+                        <img src="Images/downloadbutton.svg" alt="">
+
+
+                        <p>Opslaan in lijst</p>
+
+                    </div>
+
+
+                    <div>
+
+                        <p>3276 </p>
+                        <img src="Images/like.svg" alt="">
+                    </div>
+
+                </footer>
+            </section>
+
+            <section>
+                <!-- Verhaal   -->
+                <header style="background-image:url(Images/thumbnails/65.%20Recept.jpg)"></header>
+                <article>
+                    <h3>Recept</h3>
+
+                </article>
+                <footer>
+
+                    <div>
+                        <img src="Images/downloadbutton.svg" alt="">
+
+
+                        <p>Opslaan in lijst</p>
+
+                    </div>
+
+
+                    <div>
+
+                        <p>3276 </p>
+                        <img src="Images/like.svg" alt="">
+                    </div>
+
+                </footer>
+            </section>
+
+            <section>
+                <!-- Verhaal   -->
+                <header style="background-image:url(Images/thumbnails/verhaal10.jpg)"></header>
+
+                <article>
+                    <h3>Presentator die ten onrechte denkt aansluiting te hebben gevonden bij ‘de kids’</h3>
+
+                </article>
+                <footer>
+
+                    <div>
+                        <img src="Images/downloadbutton.svg" alt="">
+
+
+                        <p>Opslaan in lijst</p>
+
+                    </div>
+
+
+                    <div>
+
+                        <p>3276 </p>
+                        <img src="Images/like.svg" alt="">
+                    </div>
+
+                </footer>
+            </section>
+
+            <section>
+                <!-- Verhaal   -->
+                <header style="background-image:url(Images/thumbnails/3.%20Droom.png)"></header>
+                <article>
+                    <h3>Droom</h3>
+
+                </article>
+                <footer>
+
+                    <div>
+                        <img src="Images/downloadbutton.svg" alt="">
+
+
+                        <p>Opslaan in lijst</p>
+
+                    </div>
+
+
+                    <div>
+
+                        <p>3276 </p>
+                        <img src="Images/like.svg" alt="">
+                    </div>
+
+                </footer>
+            </section>
+
+            <section>
+                <!-- Verhaal   -->
+                <header style="background-image:url(Images/thumbnails/Regenboog.jpg)"></header>
+                <article>
+                    <h3>Regenboog</h3>
+
+                </article>
+                <footer>
+
+                    <div>
+                        <img src="Images/downloadbutton.svg" alt="">
+
+
+                        <p>Opslaan in lijst</p>
+
+                    </div>
+
+
+                    <div>
+
+                        <p>3276 </p>
+                        <img src="Images/like.svg" alt="">
+                    </div>
+
+                </footer>
+            </section>
+
+            <section>
+                <!-- Verhaal   -->
+                <header style="background-image:url(Images/thumbnails/poep.jpg)"></header>
+                <article>
+                    <h3>Poep</h3>
+
+                </article>
+                <footer>
+
+                    <div>
+                        <img src="Images/downloadbutton.svg" alt="">
+
+
+                        <p>Opslaan in lijst</p>
+
+                    </div>
+
+
+                    <div>
+
+                        <p>3276 </p>
+                        <img src="Images/like.svg" alt="">
+                    </div>
+
+                </footer>
+            </section>
+
+            <section>
+                <!-- Verhaal   -->
+                <header style="background-image:url(Images/thumbnails/Sonnet.jpg)"></header>
+                <article>
+                    <h3>Sonnet</h3>
+
+                </article>
+                <footer>
+
+                    <div>
+                        <img src="Images/downloadbutton.svg" alt="">
+
+
+                        <p>Opslaan in lijst</p>
+
+                    </div>
+
+
+                    <div>
+
+                        <p>3276 </p>
+                        <img src="Images/like.svg" alt="">
+                    </div>
+
+                </footer>
+            </section>
+
+            <section>
+                <!-- Verhaal   -->
+                <header style="background-image:url(Images/thumbnails/stijlpagina-moe.jpg)"></header>
+                <article>
+                    <h3>Moe</h3>
+
+                </article>
+                <footer>
+
+                    <div>
+                        <img src="Images/downloadbutton.svg" alt="">
+
+
+                        <p>Opslaan in lijst</p>
+
+                    </div>
+
+
+                    <div>
+
+                        <p>3276 </p>
+                        <img src="Images/like.svg" alt="">
+                    </div>
+
+                </footer>
+            </section>
+
+            <section>
+                <!-- Verhaal   -->
+                <header style="background-image:url(Images/thumbnails/alzheimer.jpg)"></header>
+                <article>
+                    <h3>Alzheimer</h3>
+
+                </article>
+                <footer>
+
+                    <div>
+                        <img src="Images/downloadbutton.svg" alt="">
+
+
+                        <p>Opslaan in lijst</p>
+
+                    </div>
+
+
+                    <div>
 
                         <p>3276 </p>
                         <img src="Images/like.svg" alt="">
@@ -95,23 +1252,25 @@
 
         </section>
 
-        <h2>Meest geliked</h2>
-        <section>
-
-        </section>
-
-        <h2>Vaakst gelezen</h2>
-        <section>
-
-        </section>
 
 
-
+        <footer>
+            <a href="mijnlijst.html">
+            <img src="Images/fticonlist.svg" alt=""></a>
+            <a href="register.html"><img src="Images/fticonprofile.svg" alt=""></a>
+        </footer>
     </main>
 
-    <footer></footer>
 
 
+    <footer>
+
+
+
+    </footer>
+
+
+    <script src="overzicht.js"></script>
 </body>
 
 </html>

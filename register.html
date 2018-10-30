@@ -3,48 +3,114 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Registreren/Inloggen - Flixbusverhalen</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 </head>
 
-<body>
+<body class="loginregister">
 
     <header>
-        <img src="Images/flixbus_logo.svg" alt="">
+        <img src="Images/flixbusverhalen_logo.svg" alt="">
     </header>
+
+    <nav><a href="overzichtspagina.html">Overzichtspagina</a>
+        <p>/ Inloggen of Registreren</p>
+    </nav>
 
     <main>
 
-        <label><p>Gebruikersnaam</p>
+        <button class="facebookbutton"><img src="Images/FB-f-Logo__white_29.png" alt="">Verbind met Facebook</button>
 
-        <input type="text" placeholder="6 tot 10 karakters..">
-        
-        </label>
+        <p>Registreren/aanmelden binnen enkele seconden. (Er wordt niets op je muur geplaatst)</p>
 
-        <label> <p>Wachtwoord</p>
 
-        <input type="text">
-        
-        </label>
 
-        <label> <p>Herhaal Wachtwoord</p>
 
-        <input type="text">
-        
-        </label>
-
-        <label> <p>E-mail</p>
-
-        <input type="email">
-        
-        </label>
-
-        <div class="loginb">
-            <p>Al een account? |</p> <a href="">Log in</a>
+        <div>
+            <span>of</span>
         </div>
 
 
+        <h2>Ik heb een account</h2>
+
+
+        <section>
+
+            <form action="">
+                <label> E-mailadres:
+
+            <input type="email">
+
+            </label>
+
+                <label> Wachtwoord:
+
+            <input type="password">
+
+            </label>
+                <p>Wachtwoord vergeten?</p>
+
+                <button>Aanmelden</button>
+
+            </form>
+        </section>
+
+
+
+        <div>
+            <span>of</span>
+        </div>
+
+        <h2 class="open">Ik wil me aanmelden</h2>
+
+        <section class="open">
+
+            <form action="">
+
+                <label> Gebruikersnaam
+
+            <input type="text" placeholder="6 tot 10 karakters..">
+
+            </label>
+
+                <label> Wachtwoord
+
+            <input type="password">
+
+            </label>
+
+                <label> Herhaal Wachtwoord
+
+            <input type="password">
+
+            </label>
+
+                <label> E-mail <br> 
+                <!--    br omdat het niet wilde luisteren.  -->
+
+            <input type="email">
+
+            </label>
+
+                <button>Registeren</button>
+
+            </form>
+
+        </section>
+
+
+        <footer>
+            <a href="mijnlijst.html">
+            <img src="Images/fticonlist.svg" alt=""></a>
+            <a href="register.html"><img src="Images/fticonprofile.svg" alt=""></a>
+        </footer>
+
+        <script src="login.js"></script>
+
     </main>
+
+    <footer></footer>
 
 </body>
 
