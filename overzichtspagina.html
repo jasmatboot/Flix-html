@@ -14,1262 +14,666 @@
 <body class="overzicht">
 
     <header>
-
         <img src="Images/flixbusverhalen_logo.svg" alt="">
 
-        <a href="register.html">Login</a>
+        <ul>
+            <li><a href="mijnlijst.html">Mijn Lijst</a></li>
+
+            <li><a href="register.html">Login</a></li>
+
+        </ul>
+
     </header>
 
     <header>
-
-        <p>99 resultaten voor Alle</p>
+        <p>Interactieve verhalen voor, tijdens en na je reis</p>
     </header>
+
+    <header></header>
+
+    <button>Filter resultaten</button>
+
+    <nav>
+        <form action="#">
+            <div>
+                <h2>Filter resultaten</h2>
+
+
+                <label>
+                    <input type="checkbox" name="spanning" value="Spanning"> 
+                    Spanning
+                    </label>
+                <label>
+                    <input type="checkbox" name="drama" value="Drama"> Drama
+                    </label>
+                <label>
+                    <input type="checkbox" name="poeziealt" value="Poezie/alternatief"> Poëzie/Alternatief
+                    </label>
+                <label>
+                    <input type="checkbox" name="satire" value="Satire"> Satire
+                    </label>
+                <label>
+                    <input type="checkbox" name="psychologisch" value="Psychologisch"> Psychologisch
+                    </label>
+                <div>
+                    <!-- Div om de leestijd met de slider te groeperen. -->
+                    <label>
+                        <input type="checkbox" name="leestijd" value="Leestijd"> Leestijd(Maximaal)
+                        </label>
+                    <input type="range" disabled name="leestijd" min="0" max="100" value="50" step="2" />
+                </div>
+
+            </div>
+            <!--                div die de h2 'Categorieen' en de inputs/labels bij elkaar houdt-->
+            <div>
+                <button>OK</button>
+                <button>Mijn Lijst</button>
+            </div>
+        </form>
+    </nav>
 
     <main>
 
-        <button>
-            Categorieen
-        </button>
-
-        <nav>
-
-            <form action="#">
-                <div>
-                    <h2>Categorieen</h2>
-
-
-                    <label>
-                <input type="checkbox" name="spanning" value="Spanning"> 
-                Spanning
-                </label>
-                    <label>
-                <input type="checkbox" name="drama" value="Drama"> Drama
-                </label>
-                    <label>
-                <input type="checkbox" name="poeziealt" value="Poezie/alternatief"> Poëzie/Alternatief
-                </label>
-
-                    <label>
-                <input type="checkbox" name="satire" value="Satire"> Satire
-                </label>
-
-                    <label>
-                <input type="checkbox" name="psychologisch" value="Psychologisch"> Psychologisch
-                </label>
-
-                    <div>
-                        <label>
-                <input type="checkbox" name="leestijd" value="Leestijd"> Leestijd(Maximaal)
-                
-                </label>
-
-                        <input type="range" disabled name="leestijd" min="0" max="100" value="50" step="2" />
-                    </div>
-
-                </div>
-                <div>
-
-                    <button>
-            OK
-            </button>
-
-
-                    <button>Mijn Lijst</button>
-
-
-                </div>
-            </form>
-        </nav>
-
-
-        <section>
-
-            <h2>Nieuwste</h2>
-
+        <div>
 
             <section>
 
-                <a href="verhaal1.html">
-                    <!-- Verhaal   -->
-                    <header style="background-image:url(Images/thumbnails/verhaal10.jpg)"></header>
+                <h2>Nieuwste</h2>
 
+                <article>
+                    <a href="verhaal1.html">
 
+                        <div style="background-image:url(Images/thumbnails/1%20-%20Notitie.jpg)"></div>
+                        <h3>Notitie</h3>
+                    </a>
 
-                    <article>
+                    <div>
+                        <div>
+                            <img src="Images/downloadbutton.svg" alt="">
+                            <p>Opslaan in lijst</p>
+                        </div>
+                        <div>
+                            <p>72</p>
+                            <img src="Images/like.svg" alt="">
+                        </div>
+                    </div>
+
+                    <!--     5 divs voor cosmetische redenen, header en footer mochten niet.      -->
+                </article>
+            </section>
+
+            <section>
+
+                <article>
+                    <a href="verhaal1.html">
+
+                        <div style="background-image:url(Images/thumbnails/verhaal10.jpg)"></div>
                         <h3>Presentator die ten onrechte denkt aansluiting te hebben gevonden bij ‘de kids’</h3>
-
-                    </article>
-
-                </a>
-                <footer>
+                    </a>
 
                     <div>
-                        <img src="Images/downloadbutton.svg" alt="">
-
-
-                        <p>Opslaan in lijst</p>
-
+                        <div>
+                            <img src="Images/downloadbutton.svg" alt="">
+                            <p>Opslaan in lijst</p>
+                        </div>
+                        <div>
+                            <p>7</p>
+                            <img src="Images/like.svg" alt="">
+                        </div>
                     </div>
 
-
-                    <div>
-
-                        <p>3276 </p>
-                        <img src="Images/like.svg" alt="">
-                    </div>
-
-                </footer>
-            </section>
-
-
-
-            <section>
-                <!-- Verhaal   -->
-                <header style="background-image:url(Images/thumbnails/3.%20Droom.png)"></header>
-                <article>
-                    <h3>Droom</h3>
-
+                    <!--     5 divs voor cosmetische redenen, header en footer mochten niet.      -->
                 </article>
-                <footer>
 
-                    <div>
-                        <img src="Images/downloadbutton.svg" alt="">
-
-
-                        <p>Opslaan in lijst</p>
-
-                    </div>
-
-
-                    <div>
-
-                        <p>3276 </p>
-                        <img src="Images/like.svg" alt="">
-                    </div>
-
-                </footer>
-            </section>
-
-            <section>
-                <!-- Verhaal   -->
-                <header style="background-image:url(Images/thumbnails/Regenboog.jpg)"></header>
                 <article>
-                    <h3>Regenboog</h3>
+                    <a href="verhaal1.html">
 
+                        <div style="background-image:url(Images/thumbnails/3.%20Droom.png)"></div>
+                        <h3>Droom</h3>
+                    </a>
+
+                    <div>
+                        <div>
+                            <img src="Images/downloadbutton.svg" alt="">
+                            <p>Opslaan in lijst</p>
+                        </div>
+                        <div>
+                            <p>15</p>
+                            <img src="Images/like.svg" alt="">
+                        </div>
+                    </div>
+
+                    <!--     5 divs voor cosmetische redenen, header en footer mochten niet.      -->
                 </article>
-                <footer>
 
-                    <div>
-                        <img src="Images/downloadbutton.svg" alt="">
-
-
-                        <p>Opslaan in lijst</p>
-
-                    </div>
-
-
-                    <div>
-
-                        <p>3276 </p>
-                        <img src="Images/like.svg" alt="">
-                    </div>
-
-                </footer>
-            </section>
-
-            <section>
-                <!-- Verhaal   -->
-                <header style="background-image:url(Images/thumbnails/19.png)"></header>
                 <article>
-                    <h3>Gemeenteblik</h3>
+                    <a href="verhaal1.html">
 
+                        <div style="background-image:url(Images/thumbnails/Regenboog.jpg)"></div>
+                        <h3>Regenboog</h3>
+                    </a>
+
+                    <div>
+                        <div>
+                            <img src="Images/downloadbutton.svg" alt="">
+                            <p>Opslaan in lijst</p>
+                        </div>
+                        <div>
+                            <p>23</p>
+                            <img src="Images/like.svg" alt="">
+                        </div>
+                    </div>
+
+                    <!--     5 divs voor cosmetische redenen, header en footer mochten niet.      -->
                 </article>
-                <footer>
 
-                    <div>
-                        <img src="Images/downloadbutton.svg" alt="">
-
-
-                        <p>Opslaan in lijst</p>
-
-                    </div>
-
-
-                    <div>
-
-                        <p>3276 </p>
-                        <img src="Images/like.svg" alt="">
-                    </div>
-
-                </footer>
-            </section>
-
-            <section>
-                <!-- Verhaal   -->
-                <header style="background-image:url(Images/thumbnails/37%20-%20Letterlijk.png)"></header>
                 <article>
-                    <h3>Letterlijk</h3>
+                    <a href="verhaal1.html">
 
+                        <div style="background-image:url(Images/thumbnails/19.png)"></div>
+                        <h3>Gemeenteblik</h3>
+                    </a>
+
+                    <div>
+                        <div>
+                            <img src="Images/downloadbutton.svg" alt="">
+                            <p>Opslaan in lijst</p>
+                        </div>
+                        <div>
+                            <p>10</p>
+                            <img src="Images/like.svg" alt="">
+                        </div>
+                    </div>
+
+                    <!--     5 divs voor cosmetische redenen, header en footer mochten niet.      -->
                 </article>
-                <footer>
 
-                    <div>
-                        <img src="Images/downloadbutton.svg" alt="">
-
-
-                        <p>Opslaan in lijst</p>
-
-                    </div>
-
-
-                    <div>
-
-                        <p>3276 </p>
-                        <img src="Images/like.svg" alt="">
-                    </div>
-
-                </footer>
-            </section>
-
-            <section>
-                <!-- Verhaal   -->
-                <header style="background-image:url(Images/thumbnails/Leon%20de%20winter.png)"></header>
                 <article>
-                    <h3>Leon de Winter</h3>
+                    <a href="verhaal1.html">
 
+                        <div style="background-image:url(Images/thumbnails/37%20-%20Letterlijk.png)"></div>
+                        <h3>Letterlijk</h3>
+                    </a>
+
+                    <div>
+                        <div>
+                            <img src="Images/downloadbutton.svg" alt="">
+                            <p>Opslaan in lijst</p>
+                        </div>
+                        <div>
+                            <p>37</p>
+                            <img src="Images/like.svg" alt="">
+                        </div>
+                    </div>
+
+                    <!--     5 divs voor cosmetische redenen, header en footer mochten niet.      -->
                 </article>
-                <footer>
 
-                    <div>
-                        <img src="Images/downloadbutton.svg" alt="">
-
-
-                        <p>Opslaan in lijst</p>
-
-                    </div>
-
-
-                    <div>
-
-                        <p>3276 </p>
-                        <img src="Images/like.svg" alt="">
-                    </div>
-
-                </footer>
-            </section>
-
-            <section>
-                <!-- Verhaal   -->
-                <header style="background-image:url(Images/thumbnails/65.%20Recept.jpg)"></header>
                 <article>
-                    <h3>Recept</h3>
+                    <a href="verhaal1.html">
 
+                        <div style="background-image:url(Images/thumbnails/Leon%20de%20winter.png)"></div>
+                        <h3>Leon de Winter</h3>
+                    </a>
+
+                    <div>
+                        <div>
+                            <img src="Images/downloadbutton.svg" alt="">
+                            <p>Opslaan in lijst</p>
+                        </div>
+                        <div>
+                            <p>13</p>
+                            <img src="Images/like.svg" alt="">
+                        </div>
+                    </div>
+
+                    <!--     5 divs voor cosmetische redenen, header en footer mochten niet.      -->
                 </article>
-                <footer>
 
-                    <div>
-                        <img src="Images/downloadbutton.svg" alt="">
-
-
-                        <p>Opslaan in lijst</p>
-
-                    </div>
-
-
-                    <div>
-
-                        <p>3276 </p>
-                        <img src="Images/like.svg" alt="">
-                    </div>
-
-                </footer>
             </section>
 
-            <section>
-                <!-- Verhaal   -->
-                <header style="background-image:url(Images/thumbnails/alzheimer.jpg)"></header>
-                <article>
-                    <h3>Alzheimer</h3>
-
-                </article>
-                <footer>
-
-                    <div>
-                        <img src="Images/downloadbutton.svg" alt="">
-
-
-                        <p>Opslaan in lijst</p>
-
-                    </div>
-
-
-                    <div>
-
-                        <p>3276 </p>
-                        <img src="Images/like.svg" alt="">
-                    </div>
-
-                </footer>
-            </section>
-
-            <section>
-                <!-- Verhaal   -->
-                <header style="background-image:url(Images/thumbnails/boers.png)"></header>
-                <article>
-                    <h3>Boers</h3>
-
-                </article>
-                <footer>
-
-                    <div>
-                        <img src="Images/downloadbutton.svg" alt="">
-
-
-                        <p>Opslaan in lijst</p>
-
-                    </div>
-
-
-                    <div>
-
-                        <p>3276 </p>
-                        <img src="Images/like.svg" alt="">
-                    </div>
-
-                </footer>
-            </section>
-
-            <section>
-                <!-- Verhaal   -->
-                <header style="background-image:url(Images/thumbnails/eric-lucassen-16-01.png)"></header>
-                <article>
-                    <h3>Eric Lucassen</h3>
-
-                </article>
-                <footer>
-
-                    <div>
-                        <img src="Images/downloadbutton.svg" alt="">
-
-
-                        <p>Opslaan in lijst</p>
-
-                    </div>
-
-
-                    <div>
-
-                        <p>3276 </p>
-                        <img src="Images/like.svg" alt="">
-                    </div>
-
-                </footer>
-            </section>
-
-            <section>
-                <!-- Verhaal   -->
-                <header style="background-image:url(Images/thumbnails/Essentie.jpg)"></header>
-                <article>
-                    <h3>Essentie</h3>
-
-                </article>
-                <footer>
-
-                    <div>
-                        <img src="Images/downloadbutton.svg" alt="">
-
-
-                        <p>Opslaan in lijst</p>
-
-                    </div>
-
-
-                    <div>
-
-                        <p>3276 </p>
-                        <img src="Images/like.svg" alt="">
-                    </div>
-
-                </footer>
-            </section>
-
-            <section>
-                <!-- Verhaal   -->
-                <header style="background-image:url(Images/thumbnails/Hero%C3%AFsch%20vers-15.png)"></header>
-                <article>
-                    <h3>Heroïsch vers</h3>
-
-                </article>
-                <footer>
-
-                    <div>
-                        <img src="Images/downloadbutton.svg" alt="">
-
-
-                        <p>Opslaan in lijst</p>
-
-                    </div>
-
-
-                    <div>
-
-                        <p>3276 </p>
-                        <img src="Images/like.svg" alt="">
-                    </div>
-
-                </footer>
-            </section>
-
-            <section>
-                <!-- Verhaal   -->
-                <header style="background-image:url(Images/thumbnails/iPhone.png)"></header>
-                <article>
-                    <h3>iPhone</h3>
-
-                </article>
-                <footer>
-
-                    <div>
-                        <img src="Images/downloadbutton.svg" alt="">
-
-
-                        <p>Opslaan in lijst</p>
-
-                    </div>
-
-
-                    <div>
-
-                        <p>3276 </p>
-                        <img src="Images/like.svg" alt="">
-                    </div>
-
-                </footer>
-            </section>
-
-            <section>
-                <!-- Verhaal   -->
-                <header style="background-image:url(Images/thumbnails/johan.png)"></header>
-                <article>
-                    <h3>Johan Cruiff</h3>
-
-                </article>
-                <footer>
-
-                    <div>
-                        <img src="Images/downloadbutton.svg" alt="">
-
-
-                        <p>Opslaan in lijst</p>
-
-                    </div>
-
-
-                    <div>
-
-                        <p>3276 </p>
-                        <img src="Images/like.svg" alt="">
-                    </div>
-
-                </footer>
-            </section>
-
-
-
-
-
-        </section>
-
+        </div>
 
         <section>
-
             <h2>Meest geliked</h2>
 
-            <section>
-                <!-- Verhaal   -->
-                <header style="background-image:url(Images/thumbnails/poep.jpg)"></header>
-                <article>
-                    <h3>Poep</h3>
+            <article>
+                <a href="verhaal1.html">
 
-                </article>
-                <footer>
+                    <div style="background-image:url(Images/thumbnails/poep.jpg)"></div>
+                    <h3>Poepen</h3>
+                </a>
 
+                <div>
                     <div>
                         <img src="Images/downloadbutton.svg" alt="">
-
-
                         <p>Opslaan in lijst</p>
-
                     </div>
-
-
                     <div>
-
-                        <p>3276 </p>
+                        <p>34k</p>
                         <img src="Images/like.svg" alt="">
                     </div>
+                </div>
 
-                </footer>
-            </section>
+                <!--     5 divs voor cosmetische redenen, header en footer mochten niet.      -->
+            </article>
 
-            <section>
-                <!-- Verhaal   -->
-                <header style="background-image:url(Images/thumbnails/Sonnet.jpg)"></header>
-                <article>
+            <article>
+                <a href="verhaal1.html">
+
+                    <div style="background-image:url(Images/thumbnails/Sonnet.jpg)"></div>
                     <h3>Sonnet</h3>
+                </a>
 
-                </article>
-                <footer>
-
+                <div>
                     <div>
                         <img src="Images/downloadbutton.svg" alt="">
-
-
                         <p>Opslaan in lijst</p>
-
                     </div>
-
-
                     <div>
-
-                        <p>3276 </p>
+                        <p>30k</p>
                         <img src="Images/like.svg" alt="">
                     </div>
+                </div>
 
-                </footer>
-            </section>
+                <!--     5 divs voor cosmetische redenen, header en footer mochten niet.      -->
+            </article>
 
-            <section>
-                <!-- Verhaal   -->
-                <header style="background-image:url(Images/thumbnails/stijlpagina-moe.jpg)"></header>
-                <article>
+            <article>
+                <a href="verhaal1.html">
+
+                    <div style="background-image:url(Images/thumbnails/stijlpagina-moe.jpg)"></div>
                     <h3>Moe</h3>
+                </a>
 
-                </article>
-                <footer>
-
+                <div>
                     <div>
                         <img src="Images/downloadbutton.svg" alt="">
-
-
                         <p>Opslaan in lijst</p>
-
                     </div>
-
-
                     <div>
-
-                        <p>3276 </p>
+                        <p>29k</p>
                         <img src="Images/like.svg" alt="">
                     </div>
+                </div>
 
-                </footer>
-            </section>
+                <!--     5 divs voor cosmetische redenen, header en footer mochten niet.      -->
+            </article>
 
-            <section>
-                <!-- Verhaal   -->
-                <header style="background-image:url(Images/thumbnails/alzheimer.jpg)"></header>
-                <article>
+            <article>
+                <a href="verhaal1.html">
+
+                    <div style="background-image:url(Images/thumbnails/alzheimer.jpg)"></div>
                     <h3>Alzheimer</h3>
+                </a>
 
-                </article>
-                <footer>
-
+                <div>
                     <div>
                         <img src="Images/downloadbutton.svg" alt="">
-
-
                         <p>Opslaan in lijst</p>
-
                     </div>
-
-
                     <div>
-
-                        <p>3276 </p>
+                        <p>29k</p>
                         <img src="Images/like.svg" alt="">
                     </div>
+                </div>
 
-                </footer>
-            </section>
+                <!--     5 divs voor cosmetische redenen, header en footer mochten niet.      -->
+            </article>
 
-            <section>
-                <!-- Verhaal   -->
-                <header style="background-image:url(Images/thumbnails/boers.png)"></header>
-                <article>
+            <article>
+                <a href="verhaal1.html">
+
+                    <div style="background-image:url(Images/thumbnails/boers.png)"></div>
                     <h3>Boers</h3>
+                </a>
 
-                </article>
-                <footer>
-
+                <div>
                     <div>
                         <img src="Images/downloadbutton.svg" alt="">
-
-
                         <p>Opslaan in lijst</p>
-
                     </div>
-
-
                     <div>
-
-                        <p>3276 </p>
+                        <p>27k</p>
                         <img src="Images/like.svg" alt="">
                     </div>
+                </div>
 
-                </footer>
-            </section>
+                <!--     5 divs voor cosmetische redenen, header en footer mochten niet.      -->
+            </article>
 
-            <section>
-                <!-- Verhaal   -->
-                <header style="background-image:url(Images/thumbnails/eric-lucassen-16-01.png)"></header>
-                <article>
+            <article>
+                <a href="verhaal1.html">
+
+                    <div style="background-image:url(Images/thumbnails/eric-lucassen-16-01.png)"></div>
                     <h3>Eric Lucassen</h3>
+                </a>
 
-                </article>
-                <footer>
-
+                <div>
                     <div>
                         <img src="Images/downloadbutton.svg" alt="">
-
-
                         <p>Opslaan in lijst</p>
-
                     </div>
-
-
                     <div>
-
-                        <p>3276 </p>
+                        <p>24k</p>
                         <img src="Images/like.svg" alt="">
                     </div>
+                </div>
 
-                </footer>
-            </section>
+                <!--     5 divs voor cosmetische redenen, header en footer mochten niet.      -->
+            </article>
 
-            <section>
-                <!-- Verhaal   -->
-                <header style="background-image:url(Images/thumbnails/Essentie.jpg)"></header>
-                <article>
+            <article>
+                <a href="verhaal1.html">
+
+                    <div style="background-image:url(Images/thumbnails/Essentie.jpg)"></div>
                     <h3>Essentie</h3>
+                </a>
 
-                </article>
-                <footer>
-
+                <div>
                     <div>
                         <img src="Images/downloadbutton.svg" alt="">
-
-
                         <p>Opslaan in lijst</p>
-
                     </div>
-
-
                     <div>
-
-                        <p>3276 </p>
+                        <p>23k</p>
                         <img src="Images/like.svg" alt="">
                     </div>
+                </div>
 
-                </footer>
-            </section>
+                <!--     5 divs voor cosmetische redenen, header en footer mochten niet.      -->
+            </article>
 
-            <section>
-                <!-- Verhaal   -->
-                <header style="background-image:url(Images/thumbnails/Hero%C3%AFsch%20vers-15.png)"></header>
-                <article>
-                    <h3>Heroïsch vers</h3>
+            <article>
+                <a href="verhaal1.html">
 
-                </article>
-                <footer>
+                    <div style="background-image:url(Images/thumbnails/Hero%C3%AFsch%20vers-15.png)"></div>
+                    <h3>Heroïsch Vers</h3>
+                </a>
 
+                <div>
                     <div>
                         <img src="Images/downloadbutton.svg" alt="">
-
-
                         <p>Opslaan in lijst</p>
-
                     </div>
-
-
                     <div>
-
-                        <p>3276 </p>
+                        <p>21k</p>
                         <img src="Images/like.svg" alt="">
                     </div>
+                </div>
 
-                </footer>
-            </section>
+                <!--     5 divs voor cosmetische redenen, header en footer mochten niet.      -->
+            </article>
 
-            <section>
-                <!-- Verhaal   -->
-                <header style="background-image:url(Images/thumbnails/Essentie.jpg)"></header>
-                <article>
-                    <h3>Essentie</h3>
+            <article>
+                <a href="verhaal1.html">
 
-                </article>
-                <footer>
-
-                    <div>
-                        <img src="Images/downloadbutton.svg" alt="">
-
-
-                        <p>Opslaan in lijst</p>
-
-                    </div>
-
-
-                    <div>
-
-                        <p>3276 </p>
-                        <img src="Images/like.svg" alt="">
-                    </div>
-
-                </footer>
-            </section>
-
-            <section>
-                <!-- Verhaal   -->
-                <header style="background-image:url(Images/thumbnails/Hero%C3%AFsch%20vers-15.png)"></header>
-                <article>
-                    <h3>Heroïsch vers</h3>
-
-                </article>
-                <footer>
-
-                    <div>
-                        <img src="Images/downloadbutton.svg" alt="">
-
-
-                        <p>Opslaan in lijst</p>
-
-                    </div>
-
-
-                    <div>
-
-                        <p>3276 </p>
-                        <img src="Images/like.svg" alt="">
-                    </div>
-
-                </footer>
-            </section>
-
-            <section>
-                <!-- Verhaal   -->
-                <header style="background-image:url(Images/thumbnails/iPhone.png)"></header>
-                <article>
+                    <div style="background-image:url(Images/thumbnails/iPhone.png)"></div>
                     <h3>iPhone</h3>
+                </a>
 
-                </article>
-                <footer>
-
+                <div>
                     <div>
                         <img src="Images/downloadbutton.svg" alt="">
-
-
                         <p>Opslaan in lijst</p>
-
                     </div>
-
-
                     <div>
-
-                        <p>3276 </p>
+                        <p>21k</p>
                         <img src="Images/like.svg" alt="">
                     </div>
+                </div>
 
-                </footer>
-            </section>
+                <!--     5 divs voor cosmetische redenen, header en footer mochten niet.      -->
+            </article>
 
-            <section>
-                <!-- Verhaal   -->
-                <header style="background-image:url(Images/thumbnails/johan.png)"></header>
-                <article>
+            <article>
+                <a href="verhaal1.html">
+
+                    <div style="background-image:url(Images/thumbnails/johan.png)"></div>
                     <h3>Johan Cruiff</h3>
+                </a>
 
-                </article>
-                <footer>
-
+                <div>
                     <div>
                         <img src="Images/downloadbutton.svg" alt="">
-
-
                         <p>Opslaan in lijst</p>
-
                     </div>
-
-
                     <div>
-
-                        <p>3276 </p>
+                        <p>20k</p>
                         <img src="Images/like.svg" alt="">
                     </div>
+                </div>
 
-                </footer>
-            </section>
-
-            <section>
-                <!-- Verhaal   -->
-                <header style="background-image:url(Images/thumbnails/3.%20Droom.png)"></header>
-                <article>
-                    <h3>Droom</h3>
-
-                </article>
-                <footer>
-
-                    <div>
-                        <img src="Images/downloadbutton.svg" alt="">
-
-
-                        <p>Opslaan in lijst</p>
-
-                    </div>
-
-
-                    <div>
-
-                        <p>3276 </p>
-                        <img src="Images/like.svg" alt="">
-                    </div>
-
-                </footer>
-            </section>
-
-            <section>
-                <!-- Verhaal   -->
-                <header style="background-image:url(Images/thumbnails/Regenboog.jpg)"></header>
-                <article>
-                    <h3>Regenboog</h3>
-
-                </article>
-                <footer>
-
-                    <div>
-                        <img src="Images/downloadbutton.svg" alt="">
-
-
-                        <p>Opslaan in lijst</p>
-
-                    </div>
-
-
-                    <div>
-
-                        <p>3276 </p>
-                        <img src="Images/like.svg" alt="">
-                    </div>
-
-                </footer>
-            </section>
-
+                <!--     5 divs voor cosmetische redenen, header en footer mochten niet.      -->
+            </article>
 
         </section>
-
 
         <section>
+            <h2>Meest gelezen</h2>
 
-            <h2>Vaakst gelezen</h2>
+            <article>
+                <a href="verhaal1.html">
 
-            <section>
-                <!-- Verhaal   -->
-                <header style="background-image:url(Images/thumbnails/stoned.png)"></header>
-                <article>
+                    <div style="background-image:url(Images/thumbnails/stoned.png)"></div>
                     <h3>Stoned</h3>
+                </a>
 
-                </article>
-                <footer>
-
+                <div>
                     <div>
                         <img src="Images/downloadbutton.svg" alt="">
-
-
                         <p>Opslaan in lijst</p>
-
                     </div>
-
-
                     <div>
-
-                        <p>3276 </p>
+                        <p>25k</p>
                         <img src="Images/like.svg" alt="">
                     </div>
+                </div>
 
-                </footer>
-            </section>
+                <!--     5 divs voor cosmetische redenen, header en footer mochten niet.      -->
+            </article>
 
-            <section>
-                <!-- Verhaal   -->
-                <header style="background-image:url(Images/thumbnails/hardboiled.jpg)"></header>
-                <article>
+            <article>
+                <a href="verhaal1.html">
+
+                    <div style="background-image:url(Images/thumbnails/hardboiled.jpg)"></div>
                     <h3>Hardboiled</h3>
+                </a>
 
-                </article>
-                <footer>
-
+                <div>
                     <div>
                         <img src="Images/downloadbutton.svg" alt="">
-
-
                         <p>Opslaan in lijst</p>
-
                     </div>
-
-
                     <div>
-
-                        <p>3276 </p>
+                        <p>26k</p>
                         <img src="Images/like.svg" alt="">
                     </div>
+                </div>
 
-                </footer>
-            </section>
+                <!--     5 divs voor cosmetische redenen, header en footer mochten niet.      -->
+            </article>
 
-            <section>
-                <!-- Verhaal   -->
-                <header style="background-image:url(Images/thumbnails/1%20-%20Notitie.jpg)"></header>
-                <article>
+            <article>
+                <a href="verhaal1.html">
+
+                    <div style="background-image:url(Images/thumbnails/1%20-%20Notitie.jpg)"></div>
                     <h3>Notitie</h3>
+                </a>
 
-                </article>
-                <footer>
-
+                <div>
                     <div>
                         <img src="Images/downloadbutton.svg" alt="">
-
-
                         <p>Opslaan in lijst</p>
-
                     </div>
-
-
                     <div>
-
-                        <p>3276 </p>
+                        <p>21k</p>
                         <img src="Images/like.svg" alt="">
                     </div>
+                </div>
 
-                </footer>
-            </section>
+                <!--     5 divs voor cosmetische redenen, header en footer mochten niet.      -->
+            </article>
 
-            <section>
-                <!-- Verhaal   -->
-                <header style="background-image:url(Images/thumbnails/19.png)"></header>
-                <article>
+            <article>
+                <a href="verhaal1.html">
+
+                    <div style="background-image:url(Images/thumbnails/19.png)"></div>
                     <h3>Gemeenteblik</h3>
+                </a>
 
-                </article>
-                <footer>
-
+                <div>
                     <div>
                         <img src="Images/downloadbutton.svg" alt="">
-
-
                         <p>Opslaan in lijst</p>
-
                     </div>
-
-
                     <div>
-
-                        <p>3276 </p>
+                        <p>21k</p>
                         <img src="Images/like.svg" alt="">
                     </div>
+                </div>
 
-                </footer>
-            </section>
+                <!--     5 divs voor cosmetische redenen, header en footer mochten niet.      -->
+            </article>
 
-            <section>
-                <!-- Verhaal   -->
-                <header style="background-image:url(Images/thumbnails/37%20-%20Letterlijk.png)"></header>
-                <article>
+            <article>
+                <a href="verhaal1.html">
+
+                    <div style="background-image:url(Images/thumbnails/37%20-%20Letterlijk.png)"></div>
                     <h3>Letterlijk</h3>
+                </a>
 
-                </article>
-                <footer>
-
+                <div>
                     <div>
                         <img src="Images/downloadbutton.svg" alt="">
-
-
                         <p>Opslaan in lijst</p>
-
                     </div>
-
-
                     <div>
-
-                        <p>3276 </p>
+                        <p>18k</p>
                         <img src="Images/like.svg" alt="">
                     </div>
+                </div>
 
-                </footer>
-            </section>
+                <!--     5 divs voor cosmetische redenen, header en footer mochten niet.      -->
+            </article>
 
-            <section>
-                <!-- Verhaal   -->
-                <header style="background-image:url(Images/thumbnails/Leon%20de%20winter.png)"></header>
-                <article>
+            <article>
+                <a href="verhaal1.html">
+
+                    <div style="background-image:url(Images/thumbnails/Leon%20de%20winter.png)"></div>
                     <h3>Leon de Winter</h3>
+                </a>
 
-                </article>
-                <footer>
-
+                <div>
                     <div>
                         <img src="Images/downloadbutton.svg" alt="">
-
-
                         <p>Opslaan in lijst</p>
-
                     </div>
-
-
                     <div>
-
-                        <p>3276 </p>
+                        <p>19k</p>
                         <img src="Images/like.svg" alt="">
                     </div>
+                </div>
 
-                </footer>
-            </section>
+                <!--     5 divs voor cosmetische redenen, header en footer mochten niet.      -->
+            </article>
 
-            <section>
-                <!-- Verhaal   -->
-                <header style="background-image:url(Images/thumbnails/65.%20Recept.jpg)"></header>
-                <article>
+            <article>
+                <a href="verhaal1.html">
+
+                    <div style="background-image:url(Images/thumbnails/65.%20Recept.jpg)"></div>
                     <h3>Recept</h3>
+                </a>
 
-                </article>
-                <footer>
-
+                <div>
                     <div>
                         <img src="Images/downloadbutton.svg" alt="">
-
-
                         <p>Opslaan in lijst</p>
-
                     </div>
-
-
                     <div>
-
-                        <p>3276 </p>
+                        <p>16k</p>
                         <img src="Images/like.svg" alt="">
                     </div>
+                </div>
 
-                </footer>
-            </section>
+                <!--     5 divs voor cosmetische redenen, header en footer mochten niet.      -->
+            </article>
 
-            <section>
-                <!-- Verhaal   -->
-                <header style="background-image:url(Images/thumbnails/verhaal10.jpg)"></header>
+            <article>
+                <a href="verhaal1.html">
 
-                <article>
-                    <h3>Presentator die ten onrechte denkt aansluiting te hebben gevonden bij ‘de kids’</h3>
+                    <div style="background-image:url(Images/thumbnails/verhaal10.jpg)"></div>
+                    <h3>Presentator die ten onrechte denkt aansluiting te hebben gevonden bij 'de kids'</h3>
+                </a>
 
-                </article>
-                <footer>
-
+                <div>
                     <div>
                         <img src="Images/downloadbutton.svg" alt="">
-
-
                         <p>Opslaan in lijst</p>
-
                     </div>
-
-
                     <div>
-
-                        <p>3276 </p>
+                        <p>15k</p>
                         <img src="Images/like.svg" alt="">
                     </div>
+                </div>
 
-                </footer>
-            </section>
+                <!--     5 divs voor cosmetische redenen, header en footer mochten niet.      -->
+            </article>
 
-            <section>
-                <!-- Verhaal   -->
-                <header style="background-image:url(Images/thumbnails/3.%20Droom.png)"></header>
-                <article>
+            <article>
+                <a href="verhaal1.html">
+
+                    <div style="background-image:url(Images/thumbnails/3.%20Droom.png)"></div>
                     <h3>Droom</h3>
+                </a>
 
-                </article>
-                <footer>
-
+                <div>
                     <div>
                         <img src="Images/downloadbutton.svg" alt="">
-
-
                         <p>Opslaan in lijst</p>
-
                     </div>
-
-
                     <div>
-
-                        <p>3276 </p>
+                        <p>17k</p>
                         <img src="Images/like.svg" alt="">
                     </div>
+                </div>
 
-                </footer>
-            </section>
+                <!--     5 divs voor cosmetische redenen, header en footer mochten niet.      -->
+            </article>
 
-            <section>
-                <!-- Verhaal   -->
-                <header style="background-image:url(Images/thumbnails/Regenboog.jpg)"></header>
-                <article>
+            <article>
+                <a href="verhaal1.html">
+
+                    <div style="background-image:url(Images/thumbnails/Regenboog.jpg)"></div>
                     <h3>Regenboog</h3>
+                </a>
 
-                </article>
-                <footer>
-
+                <div>
                     <div>
                         <img src="Images/downloadbutton.svg" alt="">
-
-
                         <p>Opslaan in lijst</p>
-
                     </div>
-
-
                     <div>
-
-                        <p>3276 </p>
+                        <p>13k</p>
                         <img src="Images/like.svg" alt="">
                     </div>
+                </div>
 
-                </footer>
-            </section>
+                <!--     5 divs voor cosmetische redenen, header en footer mochten niet.      -->
+            </article>
 
-            <section>
-                <!-- Verhaal   -->
-                <header style="background-image:url(Images/thumbnails/poep.jpg)"></header>
-                <article>
-                    <h3>Poep</h3>
-
-                </article>
-                <footer>
-
-                    <div>
-                        <img src="Images/downloadbutton.svg" alt="">
-
-
-                        <p>Opslaan in lijst</p>
-
-                    </div>
-
-
-                    <div>
-
-                        <p>3276 </p>
-                        <img src="Images/like.svg" alt="">
-                    </div>
-
-                </footer>
-            </section>
-
-            <section>
-                <!-- Verhaal   -->
-                <header style="background-image:url(Images/thumbnails/Sonnet.jpg)"></header>
-                <article>
-                    <h3>Sonnet</h3>
-
-                </article>
-                <footer>
-
-                    <div>
-                        <img src="Images/downloadbutton.svg" alt="">
-
-
-                        <p>Opslaan in lijst</p>
-
-                    </div>
-
-
-                    <div>
-
-                        <p>3276 </p>
-                        <img src="Images/like.svg" alt="">
-                    </div>
-
-                </footer>
-            </section>
-
-            <section>
-                <!-- Verhaal   -->
-                <header style="background-image:url(Images/thumbnails/stijlpagina-moe.jpg)"></header>
-                <article>
-                    <h3>Moe</h3>
-
-                </article>
-                <footer>
-
-                    <div>
-                        <img src="Images/downloadbutton.svg" alt="">
-
-
-                        <p>Opslaan in lijst</p>
-
-                    </div>
-
-
-                    <div>
-
-                        <p>3276 </p>
-                        <img src="Images/like.svg" alt="">
-                    </div>
-
-                </footer>
-            </section>
-
-            <section>
-                <!-- Verhaal   -->
-                <header style="background-image:url(Images/thumbnails/alzheimer.jpg)"></header>
-                <article>
-                    <h3>Alzheimer</h3>
-
-                </article>
-                <footer>
-
-                    <div>
-                        <img src="Images/downloadbutton.svg" alt="">
-
-
-                        <p>Opslaan in lijst</p>
-
-                    </div>
-
-
-                    <div>
-
-                        <p>3276 </p>
-                        <img src="Images/like.svg" alt="">
-                    </div>
-
-                </footer>
-            </section>
 
         </section>
-
-
 
         <footer>
             <a href="mijnlijst.html">
             <img src="Images/fticonlist.svg" alt=""></a>
+            <a href="likelijst.html"><img src="Images/fticonlikes.svg" alt=""></a>
             <a href="register.html"><img src="Images/fticonprofile.svg" alt=""></a>
         </footer>
     </main>
 
-
-
-    <footer>
-
-
-
-    </footer>
-
-
+    <footer></footer>
     <script src="overzicht.js"></script>
 </body>
 

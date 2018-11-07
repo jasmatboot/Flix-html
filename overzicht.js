@@ -16,7 +16,7 @@ catbutton.addEventListener("click", function () {
 
 });
 
-var divArray = document.querySelectorAll("footer div:first-child");
+var divArray = document.querySelectorAll("article div div:first-child");
 
 //Maak array van alle lijst div's op de loginpagina.
 
@@ -51,12 +51,6 @@ function loader(event) {
                 },
                 200
             );
-
-            var img = this.childNodes[1];
-
-            console.log(this.childNodes)
-
-            img.src = 'Images/downloadbuttonloading.svg';
 
         });
     }

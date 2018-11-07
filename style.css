@@ -1,9 +1,12 @@
 body {
 
-    margin: 0px;
+    margin: 0;
     text-align: center;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 16px;
+    /* px omdat dat de standaard is van Flixbus. */
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 @font-face {
@@ -20,53 +23,71 @@ body {
 
 body > header:first-child {
     background-color: #76D528;
-    padding: 12px;
+    padding: 0.6em;
     position: fixed;
     z-index: 10;
     width: 100%;
+    top: 0;
+    white-space: nowrap;
 
 }
 
 body > header:nth-child(2) {
 
-    position: fixed;
+    margin-top: 3.7em;
     z-index: 10;
     width: 100%;
-    top: 3.7em;
+    top: 3.8em;
 }
 
-body > header a {
+header img {
+
+    width: 8em;
+    display: inline-flex;
+
+}
+
+header a {
+
+    text-decoration: none;
+
+}
+
+header ul {
 
     display: none;
 
 }
 
-header img {
-
-    width: 120px;
-
-}
-
 header p {
 
-    margin-top: 0px;
+    margin-top: 0;
     color: white;
 
 }
 
 header:nth-child(2) {
 
-    height: 20px;
     background-color: #444444;
     color: white;
-    margin-bottom: 20px;
-    padding: 10px;
+    padding: 0.7em;
 
 }
 
 header:nth-child(2) p {
 
-    margin: 0px;
+    margin: 0;
+
+}
+
+header:nth-child(3) {
+
+    height: 27.7vw;
+    max-height: 15.5em;
+    background-image: url(Images/headerbus.jpg);
+    background-size: 100%;
+    background-position: center;
+    display: flex;
 
 }
 
@@ -78,7 +99,7 @@ button {
     padding: 1em;
     width: 80%;
     margin: 0 auto;
-    border-radius: 5px;
+    border-radius: 0.3em;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 1.1em;
     color: white;
@@ -86,15 +107,15 @@ button {
 
 }
 
-.overzicht main > button:first-of-type,
-.mijnlijst main > button:first-of-type {
+.overzicht > button:first-of-type,
+.mijnlijst > button:first-of-type {
 
     margin-bottom: 1em;
-    margin-top: 7em;
+    margin-top: 1em;
 
 }
 
-nav.open {
+nav[class="open"] {
 
     text-align: left;
     width: 90%;
@@ -117,16 +138,23 @@ nav.open {
 
 nav {
 
-    height: 0px;
+    height: 0;
     overflow: hidden;
     transition: 0s;
+}
+
+.mijnlijst nav:first-of-type {
+
+    height: 4em;
+    overflow: visible;
+
 }
 
 nav h2:first-child {
 
     display: flex;
     justify-content: center;
-    margin: 0px;
+    margin: 0;
 
 }
 
@@ -141,14 +169,16 @@ nav div {
 
 nav div input:nth-child(2) {
 
-
+    margin-left: 2.5em;
     width: 10em;
 }
 
 label {
 
-    display: block;
+    display: flex;
     margin-top: 1em;
+    width: 20em;
+    margin-left: 1em;
 }
 
 input {
@@ -185,9 +215,15 @@ form button {
 
     overflow-x: scroll;
     height: 18em;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 2em;
+    margin-bottom: 2em;
     overflow-y: hidden;
+
+}
+
+.overzicht main > section:nth-child(even) {
+
+    background-color: lightgray;
 
 }
 
@@ -196,10 +232,50 @@ form button {
 .mijnlijst section {
 
     height: 20em;
-    margin: 0px;
+    margin: 0;
     overflow-x: auto;
     white-space: nowrap;
     padding-bottom: 1em;
+
+}
+
+.overzicht main section:first-child {
+
+    overflow-x: visible;
+    overflow-y: hidden;
+    white-space: normal;
+    padding-bottom: 0em;
+    height: 29em;
+    background-color: white;
+    text-align: center;
+}
+
+.overzicht main section:first-child h2 {
+
+    padding-left: 2vw;
+
+}
+
+.overzicht main section:first-child article {
+
+    margin-top: 0;
+    padding-top: 0;
+    margin: 0 auto;
+
+}
+
+.overzicht main div section:nth-child(2) {
+
+    padding-left: 3vw;
+    text-align: left;
+
+}
+
+
+.overzicht main div section:nth-child(2) article {
+
+    padding-top: 0em;
+    margin-top: 0em;
 
 }
 
@@ -212,40 +288,30 @@ form button {
 .mijnlijst section {
 
     text-align: center;
-
+    min-height: 20em;
+    border-bottom: 1px solid #444444;
+    width: 96%;
 }
 
-.overzicht main > section:nth-child(odd) {
+.mijnlijst section button {
 
-    background-color: lightgray;
+    margin-left: -1em;
+    margin-top: 8em;
 
 }
-
 
 .overzicht section h2,
-.verhaal section h2 {
-
-    position: absolute;
-    text-align: left;
-    margin: 10px;
-    margin-left: 0px;
-    font-weight: 700;
-    color: #444;
-    font-size: 1.375em;
-    line-height: 28px;
-
-}
-
+.verhaal section h2,
 .mijnlijst section h2 {
 
     position: absolute;
     text-align: left;
-    margin: 10px;
-    margin-left: 0px;
+    margin: 0.5em;
+    margin-left: 0;
     font-weight: 700;
     color: #444;
     font-size: 1.375em;
-    line-height: 28px;
+    line-height: 1.3em;
 
 }
 
@@ -255,7 +321,7 @@ form button {
     margin: 0 auto;
     overflow: visible;
     white-space: normal;
-    padding-left: 2em;
+    padding-left: 1em;
 
 }
 
@@ -274,98 +340,143 @@ main > section {
 
 .overzicht main > section {
 
-    padding-left: 2em;
+    padding-left: 2vw;
 
 }
 
-.overzicht section section,
-.verhaal section section,
-.mijnlijst section section {
+.overzicht section article,
+.verhaal section article,
+.mijnlijst section article {
 
-    height: 12em;
-    width: 12em;
+    height: 14em;
+    width: 11em;
     display: inline-block;
-    margin-bottom: 0px;
-    margin-top: 3em;
-    border-radius: 10px;
+    margin-bottom: 0;
+    border-radius: 0.5em;
     border: 1px solid lightgray;
     overflow: hidden;
     position: relative;
     background-color: white;
+    box-sizing: border-box;
+    top: 3em;
+}
+
+.overzicht section:not(:first-child) article {
+
+    margin-top: 1em;
+
+}
+
+.overzicht section:first-child article:first-of-type {
+
+    width: 92vw;
+    max-width: 24em;
+    height: 26em;
+    vertical-align: top;
+    display: block;
+    top: 3em;
+}
+
+.overzicht section article:hover,
+.verhaal section article:hover,
+.mijnlijst section article:hover {
+
+    border: 3px #FDAC2A solid;
+    transition: 0.2s;
+
 }
 
 
-.overzicht section section:last-of-type,
-.verhaal section section:last-of-type {
+.overzicht section article:last-of-type,
+.verhaal section article:last-of-type {
 
     margin-right: 2.5em;
 }
 
-section section header {
+section article a div:first-of-type {
 
     height: 40%;
     background-color: white;
     color: white;
-    margin-bottom: 0px;
-    padding: 0px;
+    margin-bottom: 0;
+    padding: 0;
     border-bottom: 1px solid lightgray;
     overflow: hidden;
     background-size: cover;
     background-position: top;
 }
 
-
-
-section section h3 {
+section article h3 {
 
     width: 90%;
     white-space: normal;
-    margin: 0.2em;
-    margin-left: 0.8em;
-    font-size: 1em;
+    margin: 0.6em;
+    margin-left: 0.6em;
+    font-size: 0.9em;
     position: absolute;
     justify-content: flex-start;
     text-align: left;
 }
 
-section section footer {
+section article > div:nth-child(2) {
 
-    height: 3em;
+    height: 3.2em;
     display: flex;
     justify-content: space-between;
     background-image: none;
 
     margin-top: 5em;
     align-items: flex-end;
-    padding: 0px 5px;
+    padding: 0 0.2em;
     text-align: left;
     position: relative;
 
+}
+
+.overzicht section:first-child article:first-of-type h3 {
+
+    font-size: 2em;
 
 }
 
-section section footer img {
+.overzicht section:first-child article:first-of-type > div:nth-child(2) {
 
-    width: 2.2em;
+    height: 10em;
+    padding: 0 1.2em 0;
+
+}
+
+section article > div:nth-child(2) img {
+
+    width: 1.5em;
     display: inline-flex;
 
 }
 
-section section div:first-child {
+section article > div:nth-child(2) div:first-child img {
 
-    z-index: 1;
+    width: 1.8em;
+    display: inline-flex;
 
 }
 
-section section div:first-child p {
+
+section article > div:nth-child(2) div:first-child {
+
+    z-index: 1;
+    height: 2.2em;
+
+}
+
+section article > div:nth-child(2) div:first-child p {
 
     display: none;
-    width: 0px;
+    width: 0;
     overflow: hidden;
     opacity: 0;
 }
 
-section section div.open p {
+section article > div:nth-child(2) div.open p {
 
     display: inline-flex;
     width: 100%;
@@ -373,95 +484,99 @@ section section div.open p {
 
 }
 
-section section div:first-child {
+section article > div:nth-child(2) div:first-child {
 
-    width: 20px;
-
+    width: 1em;
 }
 
-section section div:first-child img {
+section article > div:nth-child(2) div:first-child:not(.loading) img {
 
-    padding-right: 0.4em;
+    padding: 0.1em 0.3em 0.1em 0em;
 }
 
-section section div:first-child img:hover {
+section article > div:nth-child(2) div:first-child:not(.loading) img:hover {
 
     background-color: lightgray;
-    border-radius: 5px;
+    border-radius: 0.3em;
+    padding: 0.1em 0.3em 0.1em 0em;
     color: white;
-    transition: 0.2s;
     content: url("Images/downloadbuttonwit.svg");
 }
 
-section section div.loading img:hover {
+section article > div:nth-child(2) div.loading img {
 
-    background: none;
-    border-radius: 5px;
+    background-color: transparent;
+    border-radius: 0.3em;
     color: white;
-    transition: 0.2s;
+    transition: 0s;
     content: url("Images/downloadbuttonloading.svg");
+    margin: 0 auto;
 
+    animation-direction: normal;
+    -webkit-animation: spin 1s linear infinite;
+    -moz-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
 }
 
-section section div.open {
+section article div.loading img:hover {
+
+    background-color: transparent;
+    content: url("Images/downloadbuttonloading.svg");
+}
+
+section article > div:nth-child(2) div.open {
 
     position: absolute;
     width: 95%;
     background-color: lightgray;
-    border-radius: 5px;
-    height: 2.8em;
+    border-radius: 0.3em;
     display: inline-flex;
     color: white;
     transition: 0.5s;
+    margin-bottom: 2em;
+}
 
+section:first-child article > div:nth-child(2) div.open {
+
+    width: 90%;
 }
 
 
-section section div.loading {
 
-    padding-right: 0em;
+section article > div:nth-child(2) div.loading {
+
     background-color: lightgray;
-    border-radius: 1em;
-    height: 50px;
+    border-radius: 0.3em;
     display: inline-flex;
     color: white;
-    width: 3em;
+    width: 2em;
+    height: 2em;
     text-align: center;
 
 }
 
-section section div.loading img:hover {
-
-    background-color: none;
-    border-radius: 5px;
-    color: white;
-
-}
-
-section section div.loading img {
-
-    padding: 0px;
-    margin: 0 auto;
-
-    animation-direction: normal;
-    -webkit-animation: spin 0.5s linear infinite;
-    -moz-animation: spin 0.5s linear infinite;
-    animation: spin 0.5s linear infinite;
-
-}
-
-section section div:nth-child(2) {
+section article > div:nth-child(2) div:nth-child(2) {
 
     display: inline-flex;
     overflow: hidden;
-    height: 2.8em;
+    height: 2em;
+    opacity: 0.5;
 
 }
 
-section section div p {
+section article > div:nth-child(2) div p {
 
-    margin-bottom: 12px;
-    margin-right: 5px;
+    margin-top: 0.5em;
+    margin-right: 0.2em;
+    height: 2em;
+
+}
+
+section article > div:nth-child(2) div:nth-child(2) p {
+
+    margin-top: 0.4em;
+    margin-right: 0.2em;
+    height: 2em;
 
 }
 
@@ -482,16 +597,10 @@ button:hover {
 
 .loginregister nav {
 
-    height: 0px;
+    height: 0;
     overflow: visible;
     transition: 0s;
-}
-
-.loginregister nav {
-
-    height: 0px;
-    overflow: visible;
-    transition: 0s;
+    white-space: nowrap;
 }
 
 .facebookbutton {
@@ -526,7 +635,7 @@ button:hover {
 .loginregister div {
 
     position: relative;
-    line-height: 22px;
+    line-height: 1em;
     text-align: center;
     margin-top: 2em;
 
@@ -537,8 +646,8 @@ button:hover {
     content: "";
     position: absolute;
     top: 50%;
-    left: 10px;
-    right: 15px;
+    left: 1em;
+    right: 1em;
     border-top: 1px solid #c8c8c8;
 
 }
@@ -546,8 +655,8 @@ button:hover {
 .loginregister span {
 
     position: relative;
-    display: inline-block;
-    padding: 10px;
+    display: inline-flex;
+    padding: 0.6em;
     color: #444444;
     background-color: #ffffff;
     font-weight: 100;
@@ -573,28 +682,28 @@ button:hover {
 
 .loginregister h2.open:after {
     content: "";
-    display: inline-block;
-    width: 6px;
-    height: 6px;
-    margin-left: 5px;
+    display: inline-flex;
+    width: 0.3em;
+    height: 0.3em;
+    margin-left: 0.3em;
     vertical-align: middle;
     border-style: solid;
     border-color: #646464;
-    border-width: 0 0 2px 2px;
+    border-width: 0 0 0.1em 0.1em;
     transform: rotate(-45deg);
     transition: transform 0.3s;
 }
 
 .loginregister h2:after {
     content: "";
-    display: inline-block;
-    width: 6px;
-    height: 6px;
-    margin-left: 5px;
+    display: inline-flex;
+    width: 0.3em;
+    height: 0.3em;
+    margin-left: 0.3em;
     vertical-align: middle;
     border-style: solid;
     border-color: #646464;
-    border-width: 0 0 2px 2px;
+    border-width: 0 0 0.1em 0.1em;
     transform: rotate(-225deg);
     transition: transform 0.3s;
 }
@@ -602,8 +711,8 @@ button:hover {
 .loginregister section {
 
     height: 0px;
-    transition: 1s;
     overflow: hidden;
+    transition: 1s;
 
 }
 
@@ -625,42 +734,32 @@ button:hover {
     padding: 0.4em;
     font-weight: 100;
     font-family: 'Roboto Condensed', sans-serif;
-    margin-top: 0px;
+    margin-top: 0;
+    display: flex;
+    align-self: flex-start;
+
 
 }
 
 .loginregister label {
 
-    display: block;
+    display: flex;
+    flex-basis: 100%;
     margin: 0 auto;
     margin-top: 2em;
     font-size: 0.9em;
     text-align: left;
-    margin-left: 4em;
+    margin-left: 2.3em;
     color: gray;
     font-weight: 100;
     width: 80%;
 
 }
 
-.loginregister button {
-
-    margin-left: 1.8em;
-
-}
-
-.loginregister label p {
-
-    display: flex;
-    margin: 0px;
-    font-weight: 100;
-    font-size: 0.8em;
-
-}
 
 form {
 
-    margin-bottom: 20px;
+    margin-bottom: 2em;
     width: 100%;
 
 }
@@ -671,26 +770,34 @@ form {
 /* Verhaal */
 
 .verhaal nav,
-.loginregister nav {
+.loginregister nav,
+.mijnlijst nav:first-of-type {
 
     text-align: left;
     margin-left: 1em;
-    margin-bottom: 0px;
-    margin-top: 4em;
-    height: 3em;
+    margin-bottom: 0;
+    height: 4em;
 
 }
+
+.loginregister nav,
+.mijnlijst nav:first-of-type,
+.verhaal nav {
+    margin-top: 4em;
+}
+
 
 .verhaal nav p,
 .verhaal nav a,
 .loginregister nav p,
-.loginregister nav a {
+.loginregister nav a,
+.mijnlijst nav:first-of-type p,
+.mijnlijst nav:first-of-type a {
 
     display: inline-flex;
     color: #444444;
     text-decoration: none;
     font-weight: 400;
-    font-size: 0.9em;
     margin: 0em;
     line-height: 1.5em;
     margin-top: 1em;
@@ -699,7 +806,7 @@ form {
 .verhaal header:first-child,
 .loginregister header:first-child {
 
-    top: 0px;
+    top: 0;
 
 }
 
@@ -744,6 +851,50 @@ form {
     height: 20em;
 }
 
+.verhaal > img:last-of-type {
+
+    width: 3em;
+    position: fixed;
+    top: 50vh;
+    left: 45vw;
+    z-index: 10;
+    opacity: 0;
+
+}
+
+.verhaal > img:last-of-type.animatie {
+
+    width: 3em;
+    animation: movelike 1s ease;
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
+    opacity: 100;
+}
+
+@keyframes movelike {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    30% {
+        transform: rotate(180deg);
+        opacity: 100;
+    }
+
+    60% {}
+
+    80% {
+        transform: translate(0, 43vh);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(0, 43vh);
+    }
+
+}
+
 .verhaal .control {
 
     display: flex;
@@ -761,7 +912,7 @@ form {
     height: 4em;
     display: flex;
     width: 3em;
-    margin: 0px;
+    margin: 0;
 
 }
 
@@ -792,7 +943,7 @@ form {
 
 .verhaal main h2 {
 
-    margin: 0px;
+    margin: 0;
     margin-top: 1em;
     margin-right: 10vw;
     position: absolute;
@@ -940,7 +1091,7 @@ form {
 .verhaal main .alt4 p.visible {
 
     color: red;
-    margin: 2em 0px;
+    margin: 2em 0;
     transition: 0.2s;
     animation: breakdown 6s;
     animation-iteration-count: infinite;
@@ -955,7 +1106,7 @@ form {
     margin-bottom: 0em;
     margin-top: 2em;
     position: absolute;
-    right: 0px;
+    right: 0;
     margin-right: 2em;
     background-color: white;
 }
@@ -1013,6 +1164,18 @@ main > footer img {
 
 }
 
+.verhaal main > footer img {
+
+    width: 2em;
+    height: 2em;
+    margin: 1em 3em;
+    box-sizing: border-box;
+    animation: none;
+    transform: none;
+
+
+}
+
 main > footer img:hover {
 
     border: 1px solid lightgray;
@@ -1020,6 +1183,9 @@ main > footer img:hover {
 }
 
 @-moz-keyframes spin {
+
+    0% {}
+
     100% {
         -moz-transform: rotate(360deg);
     }
@@ -1041,23 +1207,34 @@ main > footer img:hover {
 
 @media(min-width:30em) {
 
-    .overzicht section section,
-    .verhaal1 section section,
-    .mijnlijst section section {
+    .overzicht section article,
+    .verhaal section article,
+    .mijnlijst section article {
 
-        width: 12em;
         display: inline-block;
-        margin-bottom: 0px;
-        border-radius: 10px;
+        margin-bottom: 0;
+        border-radius: 0.5em;
         overflow-x: scroll;
         border: 1px solid lightgray
     }
 
-    .overzicht main > button:first-of-type,
-    .mijnlijst main > button:first-of-type {
+    .overzicht > button:first-of-type,
+    .mijnlijst button {
+
+        width: 20em;
+    }
+
+    nav form div:last-child button:first-child {
 
         width: 20em;
 
+    }
+
+    .overzicht section article,
+    .verhaal section article,
+    .mijnlijst section article {
+
+        width: 12em;
 
     }
 
@@ -1065,165 +1242,220 @@ main > footer img:hover {
 
 @media(min-width:50em) {
 
-    .overzicht main > button:first-of-type,
-    .mijnlijst main > button:first-of-type {
+    body > header:first-child {
+
+        text-align: left;
+        height: 2.5em;
+
+    }
+    header img {
+
+        width: 8em;
+        display: flex;
+        margin-left: 4vw;
+        display: inline-flex;
+        vertical-align: middle;
+
+    }
+
+    .overzicht section:first-child article:first-of-type > div:nth-child(2) {
+        height: 12em;
+        padding: 0 1.2em 0;
+    }
+
+    .overzicht > button:first-of-type,
+    .mijnlijst > button:first-of-type {
 
         display: none;
 
     }
 
-    .overzicht main,
+    .overzicht main {
+
+        margin-top: 1em;
+        text-align: left;
+
+    }
+
     .mijnlijst main {
-
-        margin-top: 6.5em;
-
+        margin-top: 4em;
     }
 
-    .overzicht header:first-child,
-    .mijnlijst header:first-child {
+    .mijnlijst main > section {
 
-        top: 0;
-
-    }
-
-    body > header a {
-
-        position: absolute;
-        display: inline-flex;
-        right: 0;
-        margin-right: 5vw;
-        margin-top: 0.5em;
-        text-decoration: none;
-        color: #ffffff;
-        font-weight: 400;
-    }
-
-    body > header img {
-
-        display: inline-flex;
+        margin-left: 19em;
+        text-align: left;
+        width: 60vw;
 
     }
-
 
     .overzicht nav,
     .mijnlijst nav {
 
-        height: 8em;
+        height: 32em;
+        margin-top: 4em;
         transition: 0s;
         overflow: visible;
-        width: 100%;
+        width: 18em;
         text-align: center;
         position: relative;
         border: none;
-        border-radius: 0px;
+        border-radius: 0;
+        position: absolute;
+        background-color: white;
+        z-index: 2;
+        border-right: 1px solid lightgray;
+    }
+
+    .overzicht nav {
+
+        height: 69em;
 
     }
 
-    .overzicht nav form div:last-child button:last-child,
-    .overzicht nav form div:last-child button:nth-child(2) {
+    .mijnlijst footer:last-of-type {
 
-        display: flex;
-
-    }
-
-    nav form div:last-child {
-
-        display: flex;
+        position: fixed;
+        bottom: 0;
 
     }
 
-    nav form > div:first-of-type {
+    .mijnlijst nav:first-of-type {
+
+        margin-top: 0;
+        border: none;
+
+    }
+
+
+    header ul {
+
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: inline-flex;
+        margin-left: 1em;
+
+    }
+
+    header li a {
 
         display: flex;
-        width: 100%;
+        width: 4em;
+        padding: 0.6em 1em 0em 1em;
+        text-decoration: none;
+        color: #ffffff;
+
+    }
+
+    header li:last-child {
+
+        position: absolute;
+        right: 0;
+        margin-right: 2vw;
+
+    }
+
+    .overzicht nav {
+
+        padding-top: 2em;
+
+    }
+
+    .overzicht nav label {
+        margin-left: 3em;
+    }
+
+    .overzicht nav form div div input:nth-child(2) {
+        margin-left: 6em;
+    }
+
+
+    nav form div:last-child button:first-child {
+
+        width: 10em;
+
+    }
+
+    .overzicht section {
+
+        width: 80%;
+
+    }
+
+    .overzicht main > div {
+
+        height: 35em;
+        white-space: nowrap;
+        padding-left: 2em;
+
+    }
+
+    .overzicht main div section:nth-child(2) {
+
+        display: inline-flex;
+        flex-wrap: wrap;
         flex-direction: row;
-        align-content: flex-start;
+        width: 50em;
+        height: 34em;
+        white-space: normal;
         justify-content: flex-start;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        padding-bottom: 2em;
+        padding-left: 0;
+        box-sizing: border-box;
+
     }
 
-    .overzicht nav label,
-    .mijnlijst nav label {
+    .overzicht main section:first-child h2 {
 
-        height: 2em;
-        margin-top: 0.4em;
-        transition: 0s;
+        padding-left: 0;
+
+    }
+
+    .overzicht main section:first-child article:first-of-type {
+
+        margin: 0;
+        height: 30em;
+        width: 30em;
+
+    }
+
+    .overzicht main section article {
+
+        margin-right: 1em;
+
+    }
+
+
+    .overzicht main section:not(:nth-child(2)),
+    .overzicht main section:not(:first-child) {
+
+        padding-left: 19em;
+
+    }
+
+    .overzicht main section:first-child {
+
         display: inline-flex;
-    }
-
-    .overzicht nav form > label:first-of-type,
-    .mijnlijst nav form > label:first-of-type {
-
-        margin-left: 0.8em;
-
-    }
-
-    .overzicht nav input,
-    .mijnlijst nav input {
-
-        display: inline-flex;
-        margin-top: 0.3em;
-        margin-left: 1em;
-
-    }
-
-    .overzicht nav h2,
-    .mijnlijst nav h2 {
-
-        width: 6em;
-        margin-left: 1em;
+        width: 25em;
+        height: 35em;
+        padding-left: 19em;
+        vertical-align: top;
+        margin-left: 0;
 
     }
 
     footer {
 
         background-image: url(Images/flixmobility-2x.png);
-
         height: 22vw;
-
     }
 
     main > footer {
 
         display: none;
-
-    }
-
-    nav div input:nth-child(2) {
-
-        margin: 0px;
-        margin-left: 3em;
-        margin-top: -0.8em;
-
-
-    }
-
-    nav div:nth-of-type(2) {
-
-        display: flex;
-        margin: 0 auto;
-
-        width: 95%;
-
-        flex-direction: row;
-    }
-
-    .overzicht nav div button,
-    .mijnlijst nav div button {
-
-        width: 70em;
-        height: 3em;
-
-        text-align: center;
-        margin: 1em 1em 0em 1em;
-        background-color: #76D528;
-
-    }
-
-    .overzicht nav div button:first-child,
-    .mijnlijst nav div button:first-child {
-
-        background-color: #FDAC2A;
-        margin: 1em 5em 0em 1em;
 
     }
 
@@ -1244,32 +1476,12 @@ main > footer img:hover {
 
 }
 
-@media(min-width:80em) {
+@media(min-width:85em) {
 
-
-    header:first-child {
-
-        text-align: left;
-
-    }
-    header img {
-
-        width: 120px;
-        display: flex;
-        margin-left: 4vw;
-
-    }
-    .overzicht header:nth-child(2),
-    .mijnlijst header:nth-child(2) {
-
-        top: 3.4em;
-
-    }
 
     .mijnlijst main > section {
 
         height: 35em;
-        margin: 0 auto;
         overflow: scroll;
         white-space: normal;
 
@@ -1281,52 +1493,57 @@ main > footer img:hover {
         margin: 0 auto;
         overflow: scroll;
         white-space: normal;
-        padding-left: 2em;
+        padding-left: 6em;
+
+    }
+
+    .overzicht nav {
+
+        height: 100em;
+
+    }
+
+    .overzicht main > div {
+
+        text-align: center;
+
+    }
+
+    .overzicht main div section:nth-child(2) {
+
+        width: 50em;
 
     }
 
     .overzicht section h2,
     .mijnlijst section h2 {
 
-        margin-left: 0px;
+        margin-left: 0;
+
 
     }
 
-    .overzicht section section,
-    .verhaal section section,
-    .mijnlijst section section {
+    .overzicht section article,
+    .verhaal section article,
+    .mijnlijst section article {
 
-        margin: 0px;
-        margin-top: 3em;
+        margin: 0;
 
     }
 
-    .overzicht section section:first-of-type,
-    .verhaal section section:first-of-type,
-    .mijnlijst section section:first-of-type {
+    .overzicht section article:first-of-type,
+    .verhaal section article:first-of-type,
+    .mijnlijst section article:first-of-type {
 
         margin-left: 0em;
+
     }
 
-    .overzicht section section:last-of-type,
-    .verhaal section section:last-of-type,
-    .mijnlijst section section:last-of-type {
+    .overzicht section article:last-of-type,
+    .verhaal section article:last-of-type,
+    .mijnlijst section article:last-of-type {
 
         margin-right: 0em;
-    }
-
-    .overzicht nav div button:first-child,
-    .mijnlijst nav div button:first-child {
-
-        background-color: #FDAC2A;
-        margin: 0em 1em 0em 1em;
-
-        position: absolute;
-        width: 10em;
-        right: 0;
-        top: 0;
-        margin-right: 4vw;
-
     }
 
 }

@@ -11,21 +11,27 @@ var like = document.querySelector(".verhaal .control img");
 
 var likeAantal = document.querySelector(".verhaal .control p");
 
-var likes = 0;
+var flylike = document.querySelector(".verhaal > img:last-of-type");
+
+var likes = 72;
 
 like.addEventListener("click", function () {
     if (like.classList.contains('geliked')) {
         // logica om hartje weer uit te zetten
         like.classList.toggle('geliked');
+
         like.src = 'Images/like.svg';
 
         likes -= 1
 
-        likeAantal.textContent = likes
+        likeAantal.textContent = likes;
 
     } else {
         // logica om hartje weer aan te zetten
         like.src = 'Images/like2.svg';
+
+        flylike.classList.add('animatie');
+
         like.classList.toggle("geliked");
         setTimeout(
             function () {
